@@ -52,7 +52,9 @@ Sin embargo, esta aparente racionalidad también revela tensiones. Si bien la es
 <p>
 Desde la lógica comtiana, los influencers pueden entenderse como nuevos agentes de reorganización simbólica que participan en la configuración del orden social digital.
 </p>
-`
+`,
+'Comte2.jpeg'
+
 )">
 
     <div class="card-content">
@@ -83,7 +85,9 @@ Asimismo, la cultura influencer genera nuevas formas de cohesión social. Las co
 <p>
 No obstante, también pueden surgir fenómenos de anomia digital cuando la búsqueda constante de validación produce frustración, comparación social extrema y pérdida de referentes estables. De este modo, el análisis durkheimiano permite comprender tanto la cohesión como los riesgos desintegradores de la cultura influencer.
 </p>
-`
+`,
+'durkheim2.jpeg'
+
 )">
 
     <div class="card-content">
@@ -120,7 +124,8 @@ La cultura influencer reproduce desigualdades estructurales: quienes poseen mayo
 <p>
 Desde Marx, este fenómeno no es simplemente cultural, sino profundamente económico y conflictivo.
 </p>
-`
+`,
+'Marx2.jpeg'
 )">
 
     <div class="card-content">
@@ -155,7 +160,8 @@ Incluso la autenticidad, valor central en el mundo influencer, se convierte en u
 <p>
 Desde la perspectiva weberiana, la cultura influencer constituye una expresión extrema de la racionalización moderna, donde la identidad se convierte en empresa.
 </p>
-`
+`,
+'weber2.jpeg'
 )">
 
     <div class="card-content">
@@ -197,7 +203,8 @@ El habitus digital moldea disposiciones y gustos. Los usuarios internalizan form
 <p>
 Desde Bourdieu, la cultura influencer no es simplemente creatividad individual, sino resultado de luchas estructurales por legitimidad dentro de un espacio social específico.
 </p>
-`
+`,
+'bordieu2.jpeg'
 )">
 
     <div class="card-content">
@@ -230,7 +237,8 @@ La reputación digital se vuelve frágil y permanente al mismo tiempo: cualquier
 Thompson permite comprender cómo el poder simbólico se intensifica en entornos digitales donde la exposición constante se convierte en condición de existencia social.
 </p>
 
-`
+`,
+'jonhbthompson2.jpeg'
 )">
 
     <div class="card-content">
@@ -253,8 +261,13 @@ Thompson permite comprender cómo el poder simbólico se intensifica en entornos
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="cerrarModal()">&times;</span>
+
         <h2 id="modalTitle"></h2>
-        <p id="modalText"></p>
+
+        <div id="modalText"></div>
+
+        <img id="modalImage" src="" alt="Imagen del pensador">
+        
     </div>
 </div>
 
@@ -266,11 +279,12 @@ Thompson permite comprender cómo el poder simbólico se intensifica en entornos
 
 
 <script>
-    function abrirModal(titulo, contenidoHTML) {
-        document.getElementById("modalTitle").innerText = titulo;
-        document.getElementById("modalText").innerHTML = contenidoHTML;
-        document.getElementById("modal").style.display = "flex";
-    }
+    function abrirModal(titulo, contenidoHTML, imagen) {
+    document.getElementById("modalTitle").innerText = titulo;
+    document.getElementById("modalText").innerHTML = contenidoHTML;
+    document.getElementById("modalImage").src = imagen;
+    document.getElementById("modal").style.display = "flex";
+}
 
     function cerrarModal() {
         document.getElementById("modal").style.display = "none";

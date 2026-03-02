@@ -52,15 +52,17 @@ header{
 
 .logo{
     color:white;
-    font-size:22px;
-    font-weight:600;
+    font-size:28px;
+    font-weight:700;
 }
 
 nav a{
-    margin-left:25px;
+    margin-left:30px;
     text-decoration:none;
     color:white;
-    font-weight:500;
+    font-weight:600;
+    font-size:20px;   /* agregado */
+    letter-spacing:1px;
     transition:0.3s;
 }
 
@@ -88,9 +90,10 @@ nav a:hover{
 h1{
     text-align:center;
     margin-bottom:50px;
-    font-size:40px;
+    font-size:48px;
     color:white;
     letter-spacing:2px;
+    font-weight: 700;
 }
 
 /* REFERENCIAS */
@@ -110,18 +113,19 @@ h1{
 
 /* TEXTO */
 .referencia p{
-    font-size:18px;
-    line-height:1.8;
+    font-size:22px;
+    line-height:1.9;
     color:white;
 }
 
 /* LINKS */
 .referencia a{
     display:inline-block;
-    margin-top:10px;
+    margin-top:12px;
     text-decoration:none;
     color:#ffea00;
     font-weight:bold;
+    font-size:18px;   /* agregado */
     transition:0.3s;
 }
 

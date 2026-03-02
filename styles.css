@@ -269,3 +269,13 @@ nav a:hover {
         font-size: 34px;
     }
 }
+
+#modalImage {
+    width: 450px;       
+    height: 550px;      
+    object-fit: cover;  
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
